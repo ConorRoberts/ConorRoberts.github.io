@@ -2,11 +2,17 @@
     margin:0;
     padding:0;
     font-family: 'Open Sans', sans-serif !important;
+    box-sizing:border-box;
 }
 
-body > *{
-    height:100%;
-    width:100%;
+html{
+    font-size:62.5%;
+}
+
+body{
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.425),rgba(255, 255, 255, 0.425)),url(../assets/toronto.jpg);
+    background-size:cover;
+    background-position:top;
 }
 
 /****************************************
@@ -14,48 +20,56 @@ Text styles
 ****************************************/
 
 h1{
-    font-size:60px;
+    font-size:6rem;
     font-weight:600;
 }
 
 h2{
-    font-size:40px;
+    font-size:4rem;
+    font-weight:600;
+}
+
+h3{
+    font-size:3rem;
     font-weight:600;
 }
 
 p{
-    font-size:16px;
+    font-size:1.6rem;
     font-weight:400;
 }
-
-/****************************************
-Background
-****************************************/
-
-.background-image{
-    background-size:cover;
-    filter:blur(10px);
-    -webpack-filter:blur(10px);
-    position:fixed;
-    background-position:center;
-    z-index:0;
-} 
 
 /****************************************
 Main content
 ****************************************/
 
-.content{
-    z-index:1;
-    position:absolute;
+.title{
+    text-align:center;
 }
 
+.title-main{
+    font-size:7rem;
+    font-weight:600;
+    letter-spacing:0.6rem;
+}
+
+.title-sub{
+    font-size:2rem;
+}
+
+/* .content{
+    z-index:1;
+    position:absolute;
+} */
+
 section{
+    margin-top:1rem;
     padding: 1rem 1rem;
-    border-radius:15px;
+    border-radius:0.5rem;
     width:60vw;
     margin-left:20vw;
     background-color:rgba(250, 250, 250, 0.596);
+    justify-content:center;
 }
 
 a{
@@ -67,18 +81,20 @@ a{
 
 a:hover{
     color:dodgerblue;
-}
+} 
 
 .title-box{
     text-align:center;
 }
 
-.list-links{
+.links{
     margin-top:1rem;
     justify-content:center;
     list-style:none;
-    display:flex;
-    flex-direction:row;
+}
+
+.links li{
+    display:inline-block;
 }
 
 .text-section{
@@ -87,4 +103,17 @@ a:hover{
 
 .section-title{
     text-align:center;
+}
+
+.project{
+    margin-top:2rem;
+    border: 0.2rem dotted dodgerblue;
+}
+
+.project > div{
+    display:inline-block;
+}
+
+.project img{
+    width:50%;
 }

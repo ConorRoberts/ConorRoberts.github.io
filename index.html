@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Conor Roberts</title>
 </head>
 <body>
-    <img class="background-image" src="./assets/toronto.jpg" alt="Toronto skyline">
-    <div class="content">
-        <header style="margin-top:5vh;">
-            <section class="title-box">
-                <h1>Conor Roberts</h1>
-                <p>Computer Science Student & Aspiring Developer</p>
-                <ul class="list-links">
+    <header">
+        <section class="title-box">
+            <h1>Conor Roberts</h1>
+            <p>Computer Science Student & Future Developer</p>
+            <ul class="links">
+                <li>
+                    <a href="https://github.com/ConorRoberts/" class="link-text">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/conorjroberts/" class="link-text">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1QndFnE_myk1ms0xAul3HX1mDJRN5UnPk/view" class="link-text">
+                        <ion-icon name="document"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Skills</h2>
+            </div>
+            <div class="text-section">
+                <ul>
                     <li>
-                        <a href="https://github.com/ConorRoberts/" class="link-text">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
+                        <p>Proficient with C, Python, Java</p>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/conorjroberts/" class="link-text">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1QndFnE_myk1ms0xAul3HX1mDJRN5UnPk/view" class="link-text">
-                            <ion-icon name="document"></ion-icon>
-                        </a>
+                        <p>4+ Years of Competitive Esports Experience</p>
                     </li>
                 </ul>
-            </section>
-        </header>
-        <main>
-            <section style="margin-top:3vh;">
+            </div>
+            <h2>Education</h2>
+            <div class="text-section">
+                <ul>
+                    <li>
+                        <p>University of Guelph - Bachelor's of Computer Science (2023)</p>
+                    </li>
+                </ul>
+            </div>
+            <h2>Experience</h2>
+            <div class="text-section">
+                <ul>
+                    <li>
+                        <p>4+ Years of Competitive Esports Experience</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div class="project">
                 <div>
-                    <h2>Background</h2>
+                    <img src="./assets/caesar.png" alt="Caesar cipher image">
+                    <h3>
+                        Automated Caesar Cipher
+                    </h3>
                 </div>
-                <div class="text-section">
-                    <ul>
-                        <li>
-                            <p>Proficient with C, Python, Java</p>
-                        </li>
-                        <li>
-                            <p>4+ Years of Competitive Esports Experience</p>
-                        </li>
-                    </ul>
+                <div>
+
+                    <p>This project was made for CIS2500 at UofG.</p>
                 </div>
-                <h2>Education</h2>
-                <div class="text-section">
-                    <ul>
-                        <li>
-                            <p>University of Guelph - Bachelor's of Computer Science (2023)</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
