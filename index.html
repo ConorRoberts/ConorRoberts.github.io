@@ -1,85 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Conor Roberts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Conor Roberts Portfolio">
+    <meta name="keywords" content="Conor Roberts, Vetium, Web Developer, Programming">
+    <meta name="author" content="Conor Roberts">
 </head>
 <body>
-    <header">
-        <section class="title-box">
-            <h1>Conor Roberts</h1>
-            <p>Computer Science Student & Future Developer</p>
-            <ul class="links">
-                <li>
-                    <a href="https://github.com/ConorRoberts/" class="link-text">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/conorjroberts/" class="link-text">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/file/d/1QndFnE_myk1ms0xAul3HX1mDJRN5UnPk/view" class="link-text">
-                        <ion-icon name="document"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </header>
-    <main>
-        <section>
-            <div>
-                <h2>Skills</h2>
-            </div>
-            <div class="text-section">
-                <ul>
-                    <li>
-                        <p>Proficient with C, Python, Java</p>
-                    </li>
-                    <li>
-                        <p>4+ Years of Competitive Esports Experience</p>
-                    </li>
-                </ul>
-            </div>
-            <h2>Education</h2>
-            <div class="text-section">
-                <ul>
-                    <li>
-                        <p>University of Guelph - Bachelor's of Computer Science (2023)</p>
-                    </li>
-                </ul>
-            </div>
-            <h2>Experience</h2>
-            <div class="text-section">
-                <ul>
-                    <li>
-                        <p>4+ Years of Competitive Esports Experience</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <div>
-                    <img src="./assets/caesar.png" alt="Caesar cipher image">
+    <div class="wrapper">
+        <main>
+            <section class="intro-container">
+                <div class="headshot-container">
+                    <img class="headshot-img" src="./assets/download.png" alt="headshot image">
+                </div>
+                <div class="information">
+                    <h1>Conor Roberts</h1>
+                    <h2>Computer Science Student</h2>
+                    <p class="intro-text">
+                        Current student pursuing a Bachelor's of Computer Science at the University of Guelph (2023). Strong knowledge of Java, JavaScript, and HTML/CSS. 
+                    </p>
+                    <ul class="socials">
+                        <!-- <li>
+                            <a href="#">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <p>Email</p>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="https://github.com/ConorRoberts/" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                <p>GitHub</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/conorjroberts/" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                <p>LinkedIn</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1QndFnE_myk1ms0xAul3HX1mDJRN5UnPk/view" target="_blank">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                                <p>Resume</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="qualities-container">
+                <section class="expertise-container">
                     <h3>
-                        Automated Caesar Cipher
+                        Expertise
                     </h3>
-                </div>
-                <div>
-
-                    <p>This project was made for CIS2500 at UofG.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+                    <div>
+                        <div>
+                            <h4>Bike Taxi Operator</h4>
+                            <p class="expertise-duration">Summer 2019</p>
+                            <p>Provided entertaining open-air transportation between events, hotels and local points of interest in downtown Toronto. Acquired customers amongst fierce competition, negotiated rates and conducted service safely and professionally.</p>
+                        </div>
+                        <div>
+                            <h4>Professional Esports Player - <a href="https://smite-esports.gamepedia.com/Vetium" target="_blank">Profile</a></h4>
+                            <p class="expertise-duration">June 2015 - May 2019</p>
+                            <p>Professional <a href="https://www.smitegame.com/" target="_blank">Smite</a> player. Worked with various teams to compete in the Smite Professional League. Developed skills such as team leadership, initiative, and a strong sense of communication.</p>
+                        </div>
+                        <div>
+                            <h4>Teacher's Assistant</h4>
+                            <p class="expertise-duration">Feb. - March 2019</p>
+                            <p>Assisted students with various coding tasks. Taught students basic coding concepts with Python.</p>
+                        </div> 
+                    </div>
+                </section>
+                <section class="skills-container">
+                    <h3 class="container-title">Skills</h3>
+                    <ul class="skills">
+                        <li>
+                            <p>JavaScript</p>
+                            <div class="bar">
+                                <div class="skill-1"></div>
+                                <p>80%</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Java</p>
+                            <div class="bar">
+                                <div class="skill-2"></div>
+                                <p>80%</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>HTML & CSS</p>
+                            <div class="bar">
+                                <div class="skill-3"></div>
+                                <p>70%</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Communication</p>
+                            <div class="bar">
+                                <div class="skill-4"></div>
+                                <p>85%</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Team Leadership</p>
+                            <div class="bar">
+                                <div class="skill-5"></div>
+                                <p>75%</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <!-- <footer>
+            <p>Website built by Conor Roberts - Conor@ConorRoberts.com</p>
+        </footer> -->
+    </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>
