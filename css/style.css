@@ -16,13 +16,18 @@ html{
 a{
     text-decoration:none;
 }
+body{
+
+    background-color:rgb(178, 183, 212);
+}
 
 .wrapper{
-    height:100vh;
+    height:100%;
     width:100vw;
-    background-color:rgb(178, 183, 212);
     animation-duration:0.5s;
     animation-name:opacityFade;
+    position:absolute;
+    top:0;
 }
 
 @keyframes opacityFade{
@@ -177,7 +182,7 @@ p.expertise-duration{
     transition:color 100ms;
 }
 .expertise-container div div a:hover{
-    color:lightblue;
+    color:rgb(51, 121, 153);
 }
 
 /* Skills */
@@ -242,13 +247,18 @@ p.expertise-duration{
         flex-direction:column;
         position:absolute;
         top:1rem;
-        transform:translate(-50%,0);
-        height:auto;
+        left:50%;
+        transform:translateX(-50%);
         width:90%;
     }
 
     .wrapper{
-        height:100%;
+        display:grid;
+        place-items:center;
+        /* height:100%; */
+        width:100vw;
+        height:auto;
+        margin:0;
     }
     .intro-container{
         border:none;
