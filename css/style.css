@@ -18,11 +18,11 @@ a{
 }
 body{
 
-    background-color:rgb(178, 183, 212);
 }
 
 .wrapper{
     height:100%;
+    background-color:rgb(178, 183, 212);
     width:100vw;
     animation-duration:0.5s;
     animation-name:opacityFade;
@@ -40,7 +40,7 @@ body{
 }
 
 main{
-    position:absolute;
+    position:relative;
     top:50%;
     left:50%; 
     transform:translate(-50%,-50%); 
@@ -245,20 +245,17 @@ p.expertise-duration{
 @media(max-width:1250px){
     main{
         flex-direction:column;
-        position:absolute;
-        top:1rem;
         left:50%;
+        top:0;
         transform:translateX(-50%);
         width:90%;
+        margin:0;
     }
 
     .wrapper{
-        display:grid;
-        place-items:center;
-        /* height:100%; */
-        width:100vw;
+        padding:2vh 0;
         height:auto;
-        margin:0;
+        width:100vw;
     }
     .intro-container{
         border:none;
