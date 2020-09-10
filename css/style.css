@@ -16,14 +16,11 @@ html{
 a{
     text-decoration:none;
 }
-body{
-
-}
 
 .wrapper{
     height:100%;
     background-color:rgb(178, 183, 212);
-    width:100vw;
+    width:100%;
     animation-duration:0.5s;
     animation-name:opacityFade;
     position:absolute;
@@ -40,7 +37,7 @@ body{
 }
 
 main{
-    position:relative;
+    position: relative;
     top:50%;
     left:50%; 
     transform:translate(-50%,-50%); 
@@ -246,7 +243,7 @@ p.expertise-duration{
     main{
         flex-direction:column;
         left:50%;
-        top:0;
+        top:0; 
         transform:translateX(-50%);
         width:90%;
         margin:0;
@@ -255,13 +252,13 @@ p.expertise-duration{
     .wrapper{
         padding:2vh 0;
         height:auto;
-        width:100vw;
+        margin:0;
     }
     .intro-container{
         border:none;
         width:auto;
         padding-right:0;
-        margin-right:0;
+        margin:0;
     }
 
     .information{
